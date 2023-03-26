@@ -2,12 +2,12 @@
 <div class="conatiner-fluid mb-5 box17">
   <div class="row">
     <div class="col-md-5 box20">
-      <img class="img box18" src="{{ productData.image }}" alt="imgicon" />
+      <img class="img box18" src="{{ productData?.image }}" alt="imgicon" />
     </div>
     <div class="col-md-7 box19">
-      <h3 style="margin-top: 80px">{{ productData.title }}</h3>
-      <h1 style="color: green">Price $ {{ productData.price }}</h1>
-      <h2 style="color: red">Rating {{ productData.rating.rate }}</h2>
+      <h3 style="margin-top: 80px">{{ productData?.title }}</h3>
+      <h1 style="color: green">Price $ {{ productData?.price }}</h1>
+      <h2 style="color: red">Rating {{ productData?.rating.rate }}</h2>
       <br />
       <button
         type="button"
@@ -17,7 +17,7 @@
         Add to Cart
       </button>
       <h1>Description</h1>
-      <h5>{{ productData.description }}</h5>
+      <h5>{{ productData?.description }}</h5>
     </div>
   </div>
 </div>
