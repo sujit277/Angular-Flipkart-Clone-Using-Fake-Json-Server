@@ -9,13 +9,14 @@ import { CartService } from 'src/app/service/cart.service';
   styleUrls: ['./productdetails.component.css'],
 })
 export class ProductdetailsComponent implements OnInit {
+  productId: any;
+  productData: any;
+
   constructor(
     private route: ActivatedRoute,
     private api: ApiService,
     private cartService: CartService
   ) {}
-  productId: any;
-  productData: any;
 
   ngOnInit(): void {
     this.productId = this.route.snapshot.paramMap.get('id');
